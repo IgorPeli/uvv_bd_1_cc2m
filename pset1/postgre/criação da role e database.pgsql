@@ -1,0 +1,19 @@
+-- criação do usuário, administrador do banco de dados.
+create role "igor" WITH
+login
+superuser
+createdb
+createrole
+inherit
+norepliation
+connection limit -1
+PASSWORD '123456';
+
+create database uvv
+WITH
+OWNER = "igor"
+TEMPLATE = template0
+ENCODING = 'UTF8'
+LC_COLLATE = 'pt_BR.UTF-8'
+LC_CTYPE = 'pt_BR.UTF-8'
+CONNECTION LIMIT = -1;
