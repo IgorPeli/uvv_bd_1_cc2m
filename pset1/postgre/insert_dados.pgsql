@@ -1,3 +1,4 @@
+ -- Inserindo dados dos funcionários
 insert into elmasri.funcionario
  (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento)
  VALUES
@@ -19,7 +20,7 @@ set datestyle = dmy; -- As datas ficarem em forma de DIA/MÊS/ANO
  
 alter table elmasri.departamento alter column cpf_gerente set not null;
 -- É para ser not null, mas devido ao Jorge poderia ser null, mas voltamos com a Coinstrant de not null.
-
+-- Inserindo informações dos projetos
 insert into elmasri.projeto (nome_projeto, numero_projeto, local_projeto, numero_departamento)
 VALUES
 ('ProdutoX', 1, 'Santo Andre', 5),
@@ -28,7 +29,7 @@ VALUES
 ('Informatização', 10, 'Maua', 4),
 ('Reorganização', 20, 'São Paulo', 1),
 ('NovosBenefícios', 30, 'Maua', 4);
-
+-- Inserindo informações sobre as localizacoes dos departamentos
  insert into elmasri.localizacoes_departamento(numero_departamento,local)
  VALUES
  (1, 'São Paulo'),
@@ -36,7 +37,7 @@ VALUES
  (5, 'Santo Andre'),
  (5, 'Itu'),
  (5, 'São Paulo');
- 
+ -- Inserindo as informações de onde os funcionarios trabalham
  insert into elmasri.trabalha_em(cpf_funcionario, numero_projeto, horas)
  VALUES
 
@@ -56,8 +57,8 @@ VALUES
     ('98765432168', 30, 20.0),
     ('98765432168', 20, 15.0),
     ('88866555576', 20, NULL);
-    
  
+ -- Inserindo dados dos funcionários
 INSERT INTO elmasri.funcionario (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento) 
 VALUES
     ('Joao', 'B', 'Silva', '12345678966', '09-01-1965', 'Rua das Flores, 751, Sao Paulo, SP', 'M', 30000, '33344555587', 5),
@@ -65,7 +66,7 @@ VALUES
     ('Ronaldo', 'K', 'Lima', '66688444476', '15-09-1962', 'Rua Reboucas, 65, Piracicaba, SP', 'M', 38000, '33344555587', 5),
     ('Joice', 'A', 'Leite', '45345345376', '31-07-1972', 'Av. Lucas Obes, 74, Sao Paulo, SP','F', 25000, '33344555587', 5),
     ('Andre', 'V', 'Pereira', '98798798733', '29-03-1969', 'Rua Timbira, 35, Sao Paulo, SP', 'M', 25000, '98765432168', 4);
-   
+   -- Inserindo dados dos dependentes dos funcionarios
     insert into elmasri.dependente(cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
     VALUES
     ('33344555587', 'Alicia', 'F', '05-04-1986', 'Filha'),
