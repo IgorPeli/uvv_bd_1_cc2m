@@ -1,5 +1,5 @@
 -- criação do usuário, administrador do banco de dados.
-create role "igor" WITH
+create role igor WITH
 login
 superuser
 createdb
