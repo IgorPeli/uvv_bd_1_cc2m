@@ -1,3 +1,5 @@
+-- Primeira coisa a se fazer
+
 -- criação do usuário, administrador do banco de dados.
 create role igor WITH
 login
