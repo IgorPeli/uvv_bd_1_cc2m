@@ -1,3 +1,6 @@
+/connect uvv
+-- conectando ao database uvv
+
 --criação do esquema elmasri
 create schema elmasri
 authorization "igor";
