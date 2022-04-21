@@ -1,6 +1,6 @@
 -- Segundo passo a se fazer
 
-/connect uvv
+\connect uvv
 -- conectando ao database uvv
 
 --criação do esquema elmasri
