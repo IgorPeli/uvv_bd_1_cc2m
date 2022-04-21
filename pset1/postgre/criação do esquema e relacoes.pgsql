@@ -1,3 +1,5 @@
+-- Segundo passo a se fazer
+
 /connect uvv
 -- conectando ao database uvv
 
