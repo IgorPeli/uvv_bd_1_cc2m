@@ -94,7 +94,7 @@ create table elmasri.trabalha_em (
 cpf_funcionario char(11) not null,
 numero_projeto integer not null,
 horas DECIMAL(3,1) check (horas>0),
---Coinstraint check para ser mior que 0, e podendo ser null, pois 'Jorge' recebe null.
+ -- não é possivel trabalhar 0 horas, será NULL
 primary key (cpf_funcionario, numero_projeto)
 );
 comment on table elmasri.trabalha_em is 'Tabela para armazenar quais funcionários trabalham em quaiss projetos';
