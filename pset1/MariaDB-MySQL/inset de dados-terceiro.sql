@@ -33,7 +33,7 @@ VALUES
  VALUES
  ('Matriz', 1, '88866555576', 1981/06/19),
  ('Pesquisa', 4, '33344555587', 1988/05/22),
- ('Administração', 5, '98765432168', 199501/01);
+ ('Administração', 5, '98765432168', 1995/01/01);
  
  -- INSERÇÃO DE DADOS NA TABELA PROJETO 
 
