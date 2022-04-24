@@ -7,6 +7,5 @@ FLUSH PRIVILEGES;
 -- Criando o database
  CREATE DATABASE uvv; 
  -- Não existe schema, somente database
- COLLATE 'latin1_general_ci'
- 
+
 
