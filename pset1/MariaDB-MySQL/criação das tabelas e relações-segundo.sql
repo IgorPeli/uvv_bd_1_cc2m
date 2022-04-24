@@ -1,4 +1,4 @@
-CREATE TABLE funcionario (
+CREATE TABLE uvv.funcionario (
     cpf CHAR (11) NOT NULL,
     primeiro_nome VARCHAR(15) NOT NULL,
     nome_meio CHAR (1),
@@ -17,7 +17,7 @@ CREATE TABLE funcionario (
 );
 -- CRIAÇÃO DA TABELA com as informações dos DEPENDENTES 
 
-CREATE TABLE dependente (
+CREATE TABLE uvv.dependente (
    cpf_funcionario CHAR (11),
    nome_dependente VARCHAR (15),
    sexo CHAR (1) check (sexo = 'F' or sexo = 'M'),
@@ -29,7 +29,7 @@ CREATE TABLE dependente (
 
 -- CRIAÇÃO DA TABELA com as informações dos DEPARTAMENTO 
 
-CREATE TABLE departamento (
+CREATE TABLE uvv.departamento (
    numero_departamento INT,
    nome_departamento VARCHAR (15) NOT NULL,
    cpf_gerente CHAR (11) NOT null,
@@ -41,7 +41,7 @@ CREATE TABLE departamento (
 
 -- CRIAÇÃO DA TABELA com as informações dos LOCALIZACOES dos DEPARTAMENTO 
 
-CREATE TABLE localizacoes_departamento(
+CREATE TABLE uvv.localizacoes_departamento(
   numero_departamento INT,
   local VARCHAR (11),
   PRIMARY KEY (numero_departamento, LOCAL),
@@ -50,7 +50,7 @@ CREATE TABLE localizacoes_departamento(
 
 -- CRIAÇÃO DA TABELA com as informações dos PROJETOS
 
-CREATE TABLE projeto (
+CREATE TABLE uvv.projeto (
 numero_projeto INT,
 nome_projeto VARCHAR (15),
 local_projeto VARCHAR (15),
@@ -61,7 +61,7 @@ UNIQUE (nome_projeto)
 );
 
 -- CRIAÇÃO DA TABELA com as informações de onde as pessoas trabalham
-CREATE TABLE trabalha_em(
+CREATE TABLE uvv.trabalha_em(
 cpf_funcionario CHAR (11),
 numero_projeto INT,
 horas DECIMAL (3,1) check (horas>0),
