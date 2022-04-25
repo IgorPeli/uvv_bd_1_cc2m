@@ -9,7 +9,7 @@ authorization "igor";
 
 alter user "igor"
 -- usuario administrador do BD
-set search_path to elmasri, "igor", public;
+set search_path to elmasri, 'igor', public;
 --tabelas criadas dentro do esquema elmasri
 
 /*agora todas as tabelas e relações serão criadas,
