@@ -1,5 +1,4 @@
--- Terceiro passo a fazer
- 
+
  -- Inserindo dados dos funcionários
 insert into elmasri.funcionario
  (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento)
