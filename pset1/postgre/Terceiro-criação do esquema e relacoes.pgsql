@@ -1,4 +1,3 @@
--- Segundo passo a se fazer
 
 --criação do esquema elmasri
 create schema elmasri
