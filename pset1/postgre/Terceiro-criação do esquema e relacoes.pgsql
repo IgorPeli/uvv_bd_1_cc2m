@@ -1,4 +1,8 @@
 
+-- conexão ao banco uvv com o usuário igor:
+\c "dbname=uvv user=igor password=123456"
+
+
 --criação do esquema elmasri
 create schema elmasri
 authorization "igor";
